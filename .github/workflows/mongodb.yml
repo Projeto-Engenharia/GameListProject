@@ -1,25 +1,20 @@
-name: .NET
+name: Mongo Export
 
-on:
+on: 
   push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
 
 jobs:
-  build:
-
+  mongoexport:
     runs-on: ubuntu-latest
-
+    name: Export MongoDB Json file
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      - uses: actions/checkout@v2
+      - name: Export Json
+        uses: tezz-io/mongoexport@v1
+        with:
+          uri: ${{ mongodb+srv://chuckbabyReal:rudneygay123@gamelist.fkndq.mongodb.net/test }}
+          export: D:\Dev\GameListProject_real\GameListProject\result.json
+          db: GameList
+          collection: Users
+          rewrite: true
