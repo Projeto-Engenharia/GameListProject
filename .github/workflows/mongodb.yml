@@ -14,7 +14,7 @@ jobs:
         uses: tezz-io/mongoexport@v1
         with:
           uri: mongodb+srv://<username>:<password>@<cluster-name>.xxxxx.mongodb.net
-          export: D:\Dev\GameListProject_real\GameListProject\result.json
+          export: result.json
           db: GameList
           collection: Users
           rewrite: true
