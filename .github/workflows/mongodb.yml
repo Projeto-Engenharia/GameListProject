@@ -13,7 +13,7 @@ jobs:
       - name: Export Json
         uses: tezz-io/mongoexport@v1
         with:
-          uri: ${{ mongodb+srv://chuckbabyReal:rudneygay123@gamelist.fkndq.mongodb.net/test }}
+          uri: ${{ secrets.mongodb+srv://chuckbabyReal:rudneygay123@gamelist.fkndq.mongodb.net/test }}
           export: D:\Dev\GameListProject_real\GameListProject\result.json
           db: GameList
           collection: Users
