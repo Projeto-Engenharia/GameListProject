@@ -1,2 +1,10 @@
 
 *.editorconfig
+*.cache
+*.editorconfig
+*.cache
+*.editorconfig
+GameListProject/obj/GameListProject.csproj.nuget.dgspec.json
+GameListProject/obj/GameListProject.csproj.nuget.g.props
+GameListProject/obj/project.assets.json
+*.cache
