@@ -39,4 +39,6 @@ public class GamesService
 
     public async Task RemoveAsync(string id) =>
         await _GamesCollection.DeleteOneAsync(x => x.Id == id);
+
+
 }

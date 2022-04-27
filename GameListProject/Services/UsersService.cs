@@ -40,7 +40,8 @@ public class UsersService
 
     public async Task RemoveAsync(string id) =>
         await _UsersCollection.DeleteOneAsync(x => x.Id == id);
-    //public async Task<User?> GetAsync(string nome) =>
-    //    await _UsersCollection.Find(x => x.nome == nome).FirstOrDefaultAsync();
+
+    public async Task<User?> GetAsyncByName(string nome) =>
+        await _UsersCollection.Find(x => x.Nome == nome).FirstOrDefaultAsync();
 
 }

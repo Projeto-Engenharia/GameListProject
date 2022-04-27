@@ -70,18 +70,19 @@ public class UsersController : ControllerBase
         return NoContent();
     }
 
-    //[HttpGet("{id:length(24)}")]
-    //public async Task<ActionResult<User>> GetNovoTesteComNome(string nome)
-    //{
-    //    var user = await _usersService.GetAsync(nome);
+    [Route("teste/{nome}")]
+    [HttpGet("{id:length(24)}")]
+    public async Task<ActionResult<User>> GetNovoTesteComNome(string nome)
+    {
+        var user = await _usersService.GetAsyncByName(nome);
 
-    //    if (user is null)
-    //    {
-    //        return NotFound();
-    //    }
+        if (user is null)
+        {
+            return NotFound();
+        }
 
-    //    return user;
-    //}
+        return user;
+    }
 
 }
 
