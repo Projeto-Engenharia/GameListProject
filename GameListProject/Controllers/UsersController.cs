@@ -1,5 +1,6 @@
 ﻿using GameListProject.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 using UserStoreApi.Services;
 
 namespace UserStoreApi.Controllers;
@@ -82,6 +83,18 @@ public class UsersController : ControllerBase
         }
 
         return user;
+    }
+
+    [Route("github")]
+    [HttpGet("{id:length(24)}")]
+    public async Task<ActionResult<String>> githubRequest()
+    {
+        string url = "https://api.github.com/orgs/Projeto-Engenharia";
+        using (HttpClient client = new HttpClient())
+        {
+            client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("fernandox2000" , "1"));
+            return await client.GetStringAsync(url);
+        }
     }
 
 }
