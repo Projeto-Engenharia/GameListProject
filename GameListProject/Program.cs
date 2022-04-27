@@ -1,4 +1,5 @@
 using GameListProject.Models;
+using GameStoreApi.Services;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using UserStoreApi.Services;
@@ -7,8 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<UserDatabaseSettings>(
     builder.Configuration.GetSection("Users"));
+builder.Services.Configure<GameDatabaseSettings>(
+    builder.Configuration.GetSection("Games"));
 
 builder.Services.AddSingleton<UsersService>();
+builder.Services.AddSingleton<GamesService>();
+
 
 
 // Add services to the container.

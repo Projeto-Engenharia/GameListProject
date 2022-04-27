@@ -69,4 +69,19 @@ public class UsersController : ControllerBase
 
         return NoContent();
     }
+
+    //[HttpGet("{id:length(24)}")]
+    //public async Task<ActionResult<User>> GetNovoTesteComNome(string nome)
+    //{
+    //    var user = await _usersService.GetAsync(nome);
+
+    //    if (user is null)
+    //    {
+    //        return NotFound();
+    //    }
+
+    //    return user;
+    //}
+
 }
+

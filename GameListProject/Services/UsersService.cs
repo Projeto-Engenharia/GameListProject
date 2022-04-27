@@ -13,7 +13,6 @@ public class UsersService
     public UsersService(
         IOptions<UserDatabaseSettings> UserStoreDatabaseSettings)
 
-        
     {
         var mongoClient = new MongoClient(
             UserStoreDatabaseSettings.Value.ConnectionString);
@@ -24,11 +23,6 @@ public class UsersService
         _UsersCollection = mongoDatabase.GetCollection<User>(
             UserStoreDatabaseSettings.Value.UsersCollectionName);
 
-        //var mongoClient = new MongoClient("mongodb+srv://chuckbabyReal:rudneygay123@gamelist.fkndq.mongodb.net/test");
-
-        //var mongoDatabase = mongoClient.GetDatabase("GameList");
-
-        //var _UsersCollection = mongoDatabase.GetCollection<BsonDocument>("Users");
 
     }
 
@@ -46,4 +40,7 @@ public class UsersService
 
     public async Task RemoveAsync(string id) =>
         await _UsersCollection.DeleteOneAsync(x => x.Id == id);
+    //public async Task<User?> GetAsync(string nome) =>
+    //    await _UsersCollection.Find(x => x.nome == nome).FirstOrDefaultAsync();
+
 }
