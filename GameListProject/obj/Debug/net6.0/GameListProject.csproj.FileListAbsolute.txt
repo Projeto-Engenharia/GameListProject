@@ -84,3 +84,4 @@ D:\Dev\GameListProject_real\GameListProject\GameListProject\obj\Debug\net6.0\ref
 D:\Dev\GameListProject_real\GameListProject\GameListProject\obj\Debug\net6.0\GameListProject.pdb
 D:\Dev\GameListProject_real\GameListProject\GameListProject\obj\Debug\net6.0\GameListProject.genruntimeconfig.cache
 D:\Dev\GameListProject_real\GameListProject\GameListProject\obj\Debug\net6.0\ref\GameListProject.dll
+D:\Dev\GameListProject_real\GameListProject\GameListProject\bin\Debug\net6.0\Newtonsoft.Json.dll

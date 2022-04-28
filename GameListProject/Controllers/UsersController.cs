@@ -16,9 +16,9 @@ public class UsersController : ControllerBase
     {
         _usersService = usersService;
         _gamesService = gamesService;
-    } 
+    }
 
-
+    //rudney
 
 
     [HttpGet]
@@ -90,7 +90,12 @@ public class UsersController : ControllerBase
 
         var game = await _gamesService.GetAsync(idGame);
 
-        var entity = user.Games.Find(document => document.Id == "idGame");
+        var results = user.Games.Find(x => x.Id == idGame);
+
+        if (results is not null)
+        {
+            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário já possui este jogo em sua lista." });
+        }
 
         user.Games.Add(game);
 
