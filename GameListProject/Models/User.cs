@@ -13,7 +13,8 @@ namespace GameListProject.Models
         public string Nome { get; set; } = null!;
         [BsonElement("Senha")]
         public string Senha { get; set; } = null!;
-
+        [BsonElement("Bio")]    
+        public string Bio { get; set; } = null!;
         public List<Game> Games { get; set; } = null!;
 
     }
