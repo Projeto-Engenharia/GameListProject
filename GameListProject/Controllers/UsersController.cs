@@ -1,4 +1,5 @@
 ﻿using GameListProject.Models;
+using GameStoreApi.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
 using UserStoreApi.Services;
@@ -10,9 +11,17 @@ namespace UserStoreApi.Controllers;
 public class UsersController : ControllerBase
 {
     private readonly UsersService _usersService;
-
-    public UsersController(UsersService usersService) =>
+    private readonly GamesService _gamesService;
+    public UsersController(UsersService usersService, GamesService gamesService)
+    {
         _usersService = usersService;
+        _gamesService = gamesService;
+    } 
+
+
+
+
+
 
     [HttpGet]
     public async Task<List<User>> Get() =>
@@ -71,16 +80,23 @@ public class UsersController : ControllerBase
         return NoContent();
     }
 
-    [Route("teste/{nome}")]
-    [HttpGet("{id:length(24)}")]
-    public async Task<ActionResult<User>> GetNovoTesteComNome(string nome)
+    [Route("{idUser}/addGame/{idGame}")]
+    [HttpPut]
+    public async Task<ActionResult<User>> GetNovoTesteComNome(string idUser, string idGame)
     {
-        var user = await _usersService.GetAsyncByName(nome);
-
+        var user = await _usersService.GetAsync(idUser);
         if (user is null)
         {
             return NotFound();
         }
+
+        var game = await _gamesService.GetAsync(idGame);
+
+        var entity = user.Games.Find(document => document.Id == "idGame");
+
+        user.Games.Add(game);
+
+        await _usersService.UpdateAsync(idUser, user);
 
         return user;
     }

@@ -5,6 +5,8 @@ using MongoDB.Driver;
 using System.Net;
 using UserStoreApi.Services;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<UserDatabaseSettings>(
@@ -14,6 +16,17 @@ builder.Services.Configure<GameDatabaseSettings>(
 
 builder.Services.AddSingleton<UsersService>();
 builder.Services.AddSingleton<GamesService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:3000").AllowAnyMethod();
+                          policy.WithOrigins("http://localhost:3000").AllowAnyOrigin();
+                          policy.WithOrigins("http://localhost:3000").AllowAnyHeader();
+                      });
+});
 
 
 // Add services to the container.
@@ -33,6 +46,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
