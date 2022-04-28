@@ -20,6 +20,7 @@ public class UsersController : ControllerBase
 
 
 
+
     [HttpGet]
     public async Task<List<User>> Get() =>
         await _usersService.GetAsync();
