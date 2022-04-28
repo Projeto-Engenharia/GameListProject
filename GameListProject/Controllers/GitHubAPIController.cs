@@ -10,7 +10,7 @@ namespace UserStoreApi.Controllers;
 public class GitHubAPIController : ControllerBase
 {
 
-    [Route("org")]
+    [Route("org/{organization}")]
     [HttpGet]
     public async Task<ActionResult<string>> githubOrgReposRequest(string organization)
     {
@@ -23,7 +23,7 @@ public class GitHubAPIController : ControllerBase
         }
     }
 
-    [Route("repos")]
+    [Route("repos/{organization}/{repo}")]
     [HttpGet]
     public async Task<ActionResult<string>> githubRepoBranchesRequest(string organization, string repo)
     {

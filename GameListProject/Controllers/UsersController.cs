@@ -1,6 +1,8 @@
 ﻿using GameListProject.Models;
 using GameStoreApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System.Net.Http.Headers;
 using UserStoreApi.Services;
 
@@ -80,7 +82,7 @@ public class UsersController : ControllerBase
 
     [Route("{idUser}/addGame/{idGame}")]
     [HttpPut]
-    public async Task<ActionResult<User>> GetNovoTesteComNome(string idUser, string idGame)
+    public async Task<ActionResult<User>> AdicionarJogoAoUsuario(string idUser, string idGame)
     {
         var user = await _usersService.GetAsync(idUser);
         if (user is null)
@@ -90,14 +92,48 @@ public class UsersController : ControllerBase
 
         var game = await _gamesService.GetAsync(idGame);
 
-        var results = user.Games.Find(x => x.Id == idGame);
+        var verifyGame = user.Games.Find(x => x.Id == idGame);
 
-        if (results is not null)
+        if (verifyGame is not null)
         {
             return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário já possui este jogo em sua lista." });
         }
 
         user.Games.Add(game);
+
+        await _usersService.UpdateAsync(idUser, user);
+
+        return user;
+    }
+
+    [Route("{idUser}/removeGame/{idGame}")]
+    [HttpPut]
+    public async Task<ActionResult<User>> DeletarJogoDoUsuario(string idUser, string idGame)
+    {
+        var user = await _usersService.GetAsync(idUser);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        var game = user.Games.Find(x => x.Id == idGame);
+
+        if (game is null)
+        {
+            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário não possui este jogo" });
+        }
+
+        var newGameList = new List<Game>();
+
+        for (int i = 0; i < user.Games.Count; i++)
+        {
+            if (user.Games[i].Id != idGame)
+            {
+                newGameList.Add(user.Games[i]);
+            }
+        }
+
+        user.Games = newGameList;
 
         await _usersService.UpdateAsync(idUser, user);
 
