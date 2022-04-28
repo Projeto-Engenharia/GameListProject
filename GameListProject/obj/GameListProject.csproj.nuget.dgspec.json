@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Mack\\Tarefas Mack\\EngSoftware\\source\\repos\\GameListProject\\GameListProject\\GameListProject.csproj": {}
+    "D:\\Dev\\GameListProject_real\\GameListProject\\GameListProject\\GameListProject.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Mack\\Tarefas Mack\\EngSoftware\\source\\repos\\GameListProject\\GameListProject\\GameListProject.csproj": {
+    "D:\\Dev\\GameListProject_real\\GameListProject\\GameListProject\\GameListProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Mack\\Tarefas Mack\\EngSoftware\\source\\repos\\GameListProject\\GameListProject\\GameListProject.csproj",
+        "projectUniqueName": "D:\\Dev\\GameListProject_real\\GameListProject\\GameListProject\\GameListProject.csproj",
         "projectName": "GameListProject",
-        "projectPath": "D:\\Documentos\\Mack\\Tarefas Mack\\EngSoftware\\source\\repos\\GameListProject\\GameListProject\\GameListProject.csproj",
-        "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Mack\\Tarefas Mack\\EngSoftware\\source\\repos\\GameListProject\\GameListProject\\obj\\",
+        "projectPath": "D:\\Dev\\GameListProject_real\\GameListProject\\GameListProject\\GameListProject.csproj",
+        "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\GameListProject_real\\GameListProject\\GameListProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -47,6 +47,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.15.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
