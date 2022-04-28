@@ -43,7 +43,15 @@ public class UsersController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post(User newUser)
     {
+        if(await _usersService.GetAsyncByName(newUser.Nome) is not null)
+        {
+            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário esse nome já existe" });
+        }
+
+
         await _usersService.CreateAsync(newUser);
+
+        
 
         return CreatedAtAction(nameof(Get), new { id = newUser.Id }, newUser);
     }
