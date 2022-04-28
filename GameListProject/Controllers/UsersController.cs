@@ -16,9 +16,9 @@ public class UsersController : ControllerBase
     {
         _usersService = usersService;
         _gamesService = gamesService;
-    } 
+    }
 
-
+    //rudney
 
 
     [HttpGet]
