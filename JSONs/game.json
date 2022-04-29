@@ -4,7 +4,7 @@
         "Genero": "RPG",
         "Descricao": "The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.",
         "Avaliacao":10,
-        "Image": "https://image.api.playstation.com/vulcan/img/rnd/202009/2913/TQKAd8U6hnIFQIIcz6qnFh8C.png"
+        "Image": "https://dgamerenerd.com.br/wp-content/uploads/2021/02/apps.28990.69531514236615003.8f0d03d6-6311-4c21-a151-834503c2901a.jpg"
     },
     {
         "Nome": "Horizon Zero Dawn Complete Edition",
@@ -33,6 +33,106 @@
         "Descricao": "O NOVO RPG DE AÇÃO E FANTASIA. Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.",
         "Avaliacao":10,
         "Image": "https://s1.gaming-cdn.com/images/products/4824/orig-fallback-v1/elden-ring-pc-jogo-steam-europe-cover.jpg"
+    },
+    {
+        "Nome": "TEKKEN 7",
+        "Genero": "Luta",
+        "Descricao": "AS MELHORES LUTAS SÃO AS PESSOAIS Cerre os punhos e se prepare para o combate definitivo. Desenvolvida no Unreal Engine 4, a franquia de luta está de volta para mais um round com TEKKEN 7.",
+        "Avaliacao":8,
+        "Image": "https://cdn.game.tv/game-tv-content/images_3/c8413ffd4a37ff07b100e4029f3b312a/GameTile.jpg"
+    },
+    {
+        "Nome": "Five Nights at Freddy's: Security Breach",
+        "Genero": "Terror",
+        "Descricao": "Em Five Nights at Freddy’s: Security Breach, você joga como Gregory, um garotinho que ficou preso à noite no Freddy Fazbear’s Mega Pizzaplex. Com a ajuda do próprio Freddy, Gregory deve desvendar os segredos do Pizzaplex, descobrir a verdade e sobreviver até o amanhecer.",
+        "Avaliacao":8.5,
+        "Image": "https://pobierzgrepc.com/uploads/posts/2021-12/five-nights-at-freddys-security-breach-cover-pobierz.webp"
+    },
+    {
+        "Nome": "Counter-Strike: Global Offensive",
+        "Genero": "FPS",
+        "Descricao": "O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos. O CS:GO contém novos mapas, personagens e armas, além de contar com versões atualizadas de conteúdos do CS clássico (como de_dust2).",
+        "Avaliacao":8,
+        "Image": "https://s1.gaming-cdn.com/images/products/9459/orig-fallback-v1/counter-strike-global-offensive-pc-mac-jogo-steam-cover.jpg"
+    },
+    {
+        "Nome": "SMITE",
+        "Genero": "MOBA",
+        "Descricao": "Junte-se a mais de 35 milhões de jogadores em SMITE, o campo de batalha dos deuses. Erga o martelo de Thor, transforme seus inimigos em estátua como a Medusa, ou escolha entre outros mais de 100 personagens icônicos da mitologia. Torne-se um deus e jogue SMITE GRÁTIS hoje ",
+        "Avaliacao":9,
+        "Image": "https://cdn1.epicgames.com/076207fa2b5c4803a636af606c3c28b7/offer/Smite_EGS_UltimateGodPack_860x1148-860x1148-8a0d91cd306f56681bacfdd31b8d7b06-860x1148-8a0d91cd306f56681bacfdd31b8d7b06.jpg"
+    },
+    {
+        "Nome": "The Elder Scrolls V: Skyrim Special Edition",
+        "Genero": "Mundo Aberto",
+        "Descricao": "Winner of more than 200 Game of the Year Awards, Skyrim Special Edition brings the epic fantasy to life in stunning detail. The Special Edition includes the critically acclaimed game and add-ons with all-new features like remastered art and effects, volumetric god rays, dynamic depth of field, screen-space",
+        "Avaliacao":9.5,
+        "Image": "https://upload.wikimedia.org/wikipedia/pt/a/aa/The_Elder_Scrolls_5_Skyrim_capa.png"
+    },
+    {
+        "Nome": "DOOM Eternal",
+        "Genero": "Sobrevivência",
+        "Descricao": "Os exércitos do Inferno invadiram a Terra. Torne-se o Slayer em uma campanha épica para um jogador e derrote demônios entre dimensões para impedir a derradeira destruição da humanidade. A única coisa que eles temem... é você.",
+        "Avaliacao":9.5,
+        "Image": "https://wikiimg.tojsiabtv.com/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png"
+    },
+    {
+        "Nome": "Terraria",
+        "Genero": "Sobrevivência",
+        "Descricao": "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!",
+        "Avaliacao":10,
+        "Image": "https://animesonline.com.br/wp-content/uploads/2020/12/terraria-wallpaper.jpeg"
+    },
+    {
+        "Nome": "League of Legends",
+        "Genero": "MOBA",
+        "Descricao": "League of Legends é um jogo em equipes com mais de 140 Campeões com os quais você pode fazer jogadas insanas.",
+        "Avaliacao":8,
+        "Image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_LeagueofLegends_RiotGames_S2_1200x1600-7fd64f0f7b674900bdd172967865d545"
+    },
+    {
+        "Nome": "Cyberpunk 2077",
+        "Genero": "Mundo Aberto",
+        "Descricao": "Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa onde todos são obcecados por poder, glamour e alterações corporais.",
+        "Avaliacao":7,
+        "Image": "https://bdjogos.com.br/capas/3425-Cyberpunk-2077-capa-1.jpg"
+    },
+    {
+        "Nome": "Half-Life",
+        "Genero": "FPS",
+        "Descricao": "remiado como 'Jogo do Ano' por cerca de 50 publicações, o título de estreia da Valve combina ação e aventura com uma tecnologia premiada para criar um mundo assustadoramente realístico onde os jogadores devem pensar para sobreviver. ",
+        "Avaliacao":10,
+        "Image": "https://m.media-amazon.com/images/M/MV5BYTczOTI2NDEtNDJiMy00YjM3LWE2ZjMtZjA5Yjg0NWUyYTk5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+        "Nome": "FIFA 22",
+        "Genero": "Esporte",
+        "Descricao": "Powered by Football™, EA SPORTS™ FIFA 22 deixa o jogo ainda mais real com avanços fundamentais de jogabilidade e uma nova temporada de inovações em todos os modos.",
+        "Avaliacao":7.5,
+        "Image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F07%2Ffifa-2022-kylian-mbappe-cover-news-info-002.jpg?q=75&w=800&cbr=1&fit=max"
+    },
+    {
+        "Nome": "Yu-Gi-Oh! Master Duel",
+        "Genero": "Carta",
+        "Descricao": "A edição definitiva do card game competitivo que está em processo de evolução há mais de 20 anos! Duele no mais alto nível contra Duelistas de todo o mundo.",
+        "Avaliacao":7.5,
+        "Image": "https://store-images.s-microsoft.com/image/apps.11066.13533127236106585.64990aec-2e86-4d6f-8687-2c27db6fd67b.a1cef08a-78b9-4d20-8adc-64f9c914a979"
+    },
+    {
+        "Nome": "Goat Simulator",
+        "Genero": "Simulação",
+        "Descricao": "Goat Simulator is the latest in high-tech Goat Simulation technology.",
+        "Avaliacao":8.5,
+        "Image": "https://c4game.net/images/games/goat-simulator.webp"
+    },
+    {
+        "Nome": "Age of Empires II: Definitive Edition",
+        "Genero": "Estratégia",
+        "Descricao": "Age of Empires II: Definitive Edition apresenta 'Os Últimos Khans', com 3 novas campanhas e 4 novas Civilizações. Atualizações frequentes incluem eventos, conteúdo adicional, novos modos de jogo e recursos aprimorados com a recente adição do modo Coop!",
+        "Avaliacao":9,
+        "Image": "https://as01.epimg.net/meristation/imagenes/2019/09/14/game_cover/609478601568448183.jpg"
     }
+    
+    
 ]
 

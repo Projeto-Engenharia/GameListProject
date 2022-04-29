@@ -1,71 +1,10 @@
 [
     {
-      "id": "6268879a187d2aa0de9ffe3f",
-      "nome": "Rodrigo",
-      "senha": "sayuri",
-      "bio": "Gabriel mestre dos gays",
-      "games": []
-    },
-    {
-      "id": "626894426153f77da125bcca",
-      "nome": "fernando",
-      "senha": "123",
-      "bio": null,
-      "games": [
-        {
-          "id": "62687ffd187d2aa0de9ffe34",
-          "nome": "Resident Evil Village",
-          "senha": "Terror",
-          "descricao": "Vivencie o horror de sobrevivência como nunca na 8ª grande sequência da franquia Resident Evil - Resident Evil Village. Ambientado em alguns anos depois dos terríveis eventos do consagrado pela crítica Resident Evil 7 bioharzard, o novo enredo começa com Ethan Winters e sua esposa Mia vivendo pacificamente num novo lugar, livres dos pesadelos do passado. E, logo quando estavam construindo uma nova vida juntos, uma tragédia os acomete novamente.",
-          "avaliacao": 8.5,
-          "image": "https://cdn.akamai.steamstatic.com/steam/apps/1196590/header.jpg?t=1644282152"
-        }
-      ]
-    },
-    {
-      "id": "6269998c5aa676207215c1bd",
-      "nome": "Rudney Neto",
-      "senha": "rudneygay",
-      "bio": null,
-      "games": [
-        {
-          "id": null,
-          "nome": "The Witcher 3: Wild Hunt",
-          "senha": "RPG",
-          "descricao": "The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.",
-          "avaliacao": 10,
-          "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg?t=1646996408"
-        },
-        {
-          "id": "62687ffd187d2aa0de9ffe32",
-          "nome": "Horizon Zero Dawn Complete Edition",
-          "senha": "Aventura",
-          "descricao": "Viva a experiência de Aloy em sua busca lendária para desvendar os mistérios de uma Terra do futuro controlada por máquinas. Use ataques táticos devastadores contra suas presas e explore um mundo aberto majestoso neste premiado RPG de aventura e ação!",
-          "avaliacao": 9,
-          "image": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg?t=1635442187"
-        },
-        {
-          "id": "62687ffd187d2aa0de9ffe32",
-          "nome": "Horizon Zero Dawn Complete Edition",
-          "senha": "Aventura",
-          "descricao": "Viva a experiência de Aloy em sua busca lendária para desvendar os mistérios de uma Terra do futuro controlada por máquinas. Use ataques táticos devastadores contra suas presas e explore um mundo aberto majestoso neste premiado RPG de aventura e ação!",
-          "avaliacao": 9,
-          "image": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg?t=1635442187"
-        }
-      ]
-    },
-    {
-      "id": "626aeb9dc132d261662ee3c9",
-      "nome": "teste",
-      "senha": "123",
-      "bio": null,
-      "games": []
-    },
-    {
-      "id": "626af0e89308cdd368d341d4",
-      "nome": "Rudney Netoo",
-      "senha": "string",
-      "bio": null,
-      "games": []
+        "Nome": "Rodrigo",
+        "Senha": "sayuri",
+        "Bio":"Sou o Rodrigo, gosto de jogos de Animes e luta",
+        "Games":[
+        ]
     }
-  ]
+]
+
