@@ -19,6 +19,9 @@ namespace GameListProject.Models
         public float Avaliacao { get; set; }
         [BsonElement("Image")]
         public string Image { get; set; } = null!;
+        [BsonElement("Desenvolvedora")]
+        public string Desenvolvedora { get; set; } = null!;
+
 
     }
 }
