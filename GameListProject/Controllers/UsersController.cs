@@ -148,5 +148,82 @@ public class UsersController : ControllerBase
         return user;
     }
 
+    [Route("{idUser}/addFavorite/{idGame}")]
+    [HttpPut]
+    public async Task<ActionResult<User>> AdicionarJogoAoFavorito(string idUser, string idGame)
+    {
+        var user = await _usersService.GetAsync(idUser);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        var game = await _gamesService.GetAsync(idGame);
+
+        var verifyGame = user.Games.Find(x => x.Id == idGame);
+
+        if (verifyGame is not null)
+        {
+            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário já possui este jogo em sua lista." });
+        }
+
+        user.Favorites.Add(game);
+
+        await _usersService.UpdateAsync(idUser, user);
+
+        return user;
+    }
+
+    [Route("{idUser}/removeFavorite/{idGame}")]
+    [HttpPut]
+    public async Task<ActionResult<User>> DeletarJogoDoFavorito(string idUser, string idGame)
+    {
+        var user = await _usersService.GetAsync(idUser);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        var game = user.Favorites.Find(x => x.Id == idGame);
+
+        if (game is null)
+        {
+            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário não possui este jogo" });
+        }
+
+        var newGameList = new List<Game>();
+
+        for (int i = 0; i < user.Favorites.Count; i++)
+        {
+            if (user.Favorites[i].Id != idGame)
+            {
+                newGameList.Add(user.Games[i]);
+            }
+        }
+
+        user.Favorites = newGameList;
+
+        await _usersService.UpdateAsync(idUser, user);
+
+        return user;
+    }
+
+    [Route("{idUser}/changeBio/{newBio}")]
+    [HttpPost]
+    public async Task<ActionResult<User>> ChangeBio(string idUser, string newBio)
+    {
+        var user = await _usersService.GetAsync(idUser);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        user.Bio = newBio;
+
+        await _usersService.UpdateAsync(idUser, user);
+
+        return user;
+    }
+
 }
 
