@@ -8,14 +8,14 @@ namespace GameListProject.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
-            
+
         [BsonElement("Nome")]
         public string Nome { get; set; } = null!;
         [BsonElement("Senha")]
         public string Senha { get; set; } = null!;
-        [BsonElement("Bio")]    
+        [BsonElement("Bio")]
         public string Bio { get; set; } = null!;
         public List<Game> Games { get; set; } = null!;
-
+        public List<Game> Favorites { get; set; } = null;
     }
 }
