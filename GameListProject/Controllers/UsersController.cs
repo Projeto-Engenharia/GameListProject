@@ -197,7 +197,7 @@ public class UsersController : ControllerBase
         {
             if (user.Favorites[i].Id != idGame)
             {
-                newGameList.Add(user.Games[i]);
+                newGameList.Add(user.Favorites[i]);
             }
         }
 
