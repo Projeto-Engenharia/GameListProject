@@ -160,11 +160,11 @@ public class UsersController : ControllerBase
 
         var game = await _gamesService.GetAsync(idGame);
 
-        var verifyGame = user.Games.Find(x => x.Id == idGame);
+        var verifyGame = user.Favorites.Find(x => x.Id == idGame);
 
         if (verifyGame is not null)
         {
-            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário já possui este jogo em sua lista." });
+            return StatusCode(StatusCodes.Status401Unauthorized, new { message = "Usuário já possui este jogo em sua lista de favoritos." });
         }
 
         user.Favorites.Add(game);
